@@ -13,34 +13,40 @@
     <title>Formulaire</title>
 </head>
 <body>
+<h1>Ajouter un patient</h1>
+<br>
 <form action="" method="post">
     <div>
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="user_email">
-        <p>
-        </p>
-    </div>
-    <br>
-    <div>
-        <label for="password">Password :</label>
-        <input type="password" id="password" name="user_password">
+        <label for="civility">Civilité :</label>
+        <select id="civility" name="user_civility">
+            <option value="M">M.</option>
+            <option value="W">Mme</option>
+        </select>
         <p></p>
     </div>
     <br>
     <div>
-        <label for="password_confirm">Password confirmation :</label>
-        <input type="password" id="password_confirm" name="user_password_confirm">
+        <label for="firstname">Prénom :</label>
+        <input type="text" id="firstname" name="user_firstname">
         <p></p>
     </div>
     <br>
     <div>
-        <input type="checkbox" id="agreement" name="user_agreement" value="true">
-        <label for="agreement">J'ai lu et approuvé les conditions générales de ce site</label>
+        <label for="lastname">Nom :</label>
+        <input type="text" id="lastname" name="user_lastname">
+        <p></p>
+    </div>
+    <br>
+    <div>
+        <input type="checkbox" id="urgent" name="user_urgent" value="true">
+        <label for="urgent">Urgent</label>
         <p>
         </p>
     </div>
-    <input type="submit" value="Submit">
+    <br>
+    <input type="submit" value="Envoyer">
 </form>
-
+<br>
+<a href="<c:url value="/"/>"><button>Retour</button></a>
 </body>
 </html>
